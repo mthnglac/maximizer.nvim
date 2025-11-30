@@ -1,0 +1,16 @@
+{
+  "name": "maximizer.nvim",
+  "description": "Simple window maximizer/restorer for Neovim",
+  "author": "Metehan Gulac <metehanglc@protonmail.com>",
+  "version": "1.0.0",
+  "license": "MIT",
+  "repository": "https://github.com/mthnglac/maximizer.nvim",
+  "keywords": [
+    "neovim",
+    "buffer",
+    "window",
+    "lua",
+    "plugin"
+  ],
+  "main": "lua/bufferinator/init.lua"
+}

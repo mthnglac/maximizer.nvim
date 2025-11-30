@@ -1,0 +1,36 @@
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Neovim swap, backup and undo files
+*.swp
+*.swo
+*~
+*.bak
+*.tmp
+*.luac
+.lua~
+.nvim.log
+
+# Neovim cache directories
+.cache/
+.vimcache/
+
+# Plugin manager compiled files
+plugin/packer_compiled.lua
+packer_compiled.lua
+
+# Testing
+coverage/
+.nyc_output/
+test-results/
+test-build/
+
+# Dependencies
+plugged/
+site/

@@ -1,0 +1,58 @@
+*maximizer.txt*        Window Maximize/Restore for Neovim
+
+==============================================================================
+NAME
+    Maximizer.nvim
+
+DESCRIPTION
+    Simple window maximizer/restorer. Toggles current window between full 
+    viewport size and original dimensions with one keypress.
+
+==============================================================================
+INSTALLATION
+
+    " With lazy.nvim
+        { 
+          dir = '~/path/to/maximizer.nvim',
+          opts = { keymap = '<Space>m' }
+        }
+
+==============================================================================
+USAGE
+
+    :lua require('maximizer').setup()
+
+    Default: <Space>m toggles maximize/restore
+    Command: :MaximizeToggle
+
+    Customize keymap:
+        :lua require('maximizer').setup({ keymap = '<leader>m' })
+
+==============================================================================
+OPTIONS
+
+    keymap (string): Toggle key (default: "<Space>m")
+
+==============================================================================
+STATUSLINE INTEGRATION
+
+    Check vim.t.maximized in statusline:
+>
+    require('lualine').setup({
+      sections = { lualine_a = { 'mode', '%{vim.t.maximized and "[MAX]" or ""}' } }
+    })
+<
+
+==============================================================================
+API
+
+    require('maximizer').setup({ keymap = '<Space>m' })
+    require('maximizer').toggle()  -- Manual toggle
+
+==============================================================================
+LICENSE
+
+    MIT
+
+==============================================================================
+vim:tw=78:ts=8:ft=help:norl:
